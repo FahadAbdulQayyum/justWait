@@ -1,11 +1,35 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
+const { mongoose } = require('./config')
+const { Users } = require('./models')
 
 const PORT = process.env.PORT || 8080
 
 app.use(express.json())
 app.use(cors())
+// app.use(cors({ origin: true, credentials: true }))
+
+console.log('mongoose', mongoose.connection);
+
+const db = mongoose.connection
+
+db.on('error', (err) => {
+    console.log('err', err);
+})
+
+db.on('open', async () => {
+    console.log('DB running!');
+})
+
+Users.find({}, function (err, users) {
+    if (err) console.warn(err);
+    console.warn(users);
+})
+
+// db.then(() => {
+//     console.warn('Connected with db.');
+// })
 
 app.get('/', (req, res) => {
     try {
@@ -15,16 +39,6 @@ app.get('/', (req, res) => {
         return res.send({ message: e?.message, success: false })
     }
 })
-
-// app.use('/', (req, res) => {
-//     console.log();
-//     try {
-//         console.log(arr);
-//         return res.send({ message: 'Hello World!', success: true })
-//     } catch (e) {
-//         return res.send({ message: e?.message, success: false })
-//     }
-// })
 
 app.use('/', require('./routes'))
 
