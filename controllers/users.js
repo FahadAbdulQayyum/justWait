@@ -35,7 +35,7 @@ const Register = (req, res) => {
 
         console.log('body', body);
     } catch (e) {
-
+        return res.send({ success: false, message: e?.message })
     }
 }
 
