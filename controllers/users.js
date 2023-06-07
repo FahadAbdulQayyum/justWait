@@ -31,11 +31,12 @@ const Register = (req, res) => {
                 console.log('*******');
                 return res.send({ success: true, message: 'Successfully saved' })
             })
-            .catch((e) => return res.send({ message: e?.message, success: true }))
+            .catch((e) => console.log('e',e))
+//         .catch((e) => return res.send({ message: e?.message, success: true }))
 
         console.log('body', body);
     } catch (e) {
-        return res.send({ success: false, message: e?.message })
+//         return res.send({ success: false, message: e?.message })
     }
 }
 
