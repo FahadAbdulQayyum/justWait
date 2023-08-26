@@ -6,6 +6,7 @@ const cors = require('cors')
 const app = express()
 // Mongoose Setup called from config respository
 const { mongoose } = require('./config')
+// User model retrieved from model Schema
 const { Users } = require('./models')
 
 const PORT = process.env.PORT || 8080
