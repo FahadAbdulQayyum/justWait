@@ -1,5 +1,6 @@
 // express imported
 const express = require('express')
+// Cross-Origin Resource Sharing imported
 const cors = require('cors')
 const app = express()
 const { mongoose } = require('./config')
