@@ -4,6 +4,7 @@ const express = require('express')
 const cors = require('cors')
 // express introduced to the app component
 const app = express()
+// Mongoose Setup called from config respository
 const { mongoose } = require('./config')
 const { Users } = require('./models')
 
