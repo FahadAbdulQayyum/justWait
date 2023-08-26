@@ -2,6 +2,7 @@
 const express = require('express')
 // Cross-Origin Resource Sharing imported
 const cors = require('cors')
+// express introduced to the app component
 const app = express()
 const { mongoose } = require('./config')
 const { Users } = require('./models')
