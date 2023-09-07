@@ -19,6 +19,9 @@ const PORT = process.env.PORT || 8080
 // This by using the express.json enable us to fetch the 
 // readable form of data from backend.
 app.use(express.json())
+
+// This Cross-Origin resource sharing allows the restricted resource on webpage that
+// is requested from another domain from which the first resource was served. 
 app.use(cors())
 // app.use(cors({ origin: true, credentials: true }))
 
