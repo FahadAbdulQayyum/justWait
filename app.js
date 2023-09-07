@@ -9,13 +9,15 @@ const { mongoose } = require('./config')
 // User model retrieved from model Schema
 const { Users } = require('./models')
 
-// PORT is defined depending on its environment, 
-// at first it checks whether it's connected to 
-// the production environment if it finds it true
-// then fetch its PORT number and run, otherwise
-// in local system, the default PORT will be its PORT.
+ // PORT is defined depending on its environment, 
+ // at first it checks whether it's connected to 
+ // the production environment if it finds it true
+ // then fetch its PORT number and run, otherwise
+ // in local system, the default PORT will be its PORT.
 const PORT = process.env.PORT || 8080
 
+// This by using the express.json enable us to fetch the 
+// readable form of data from backend.
 app.use(express.json())
 app.use(cors())
 // app.use(cors({ origin: true, credentials: true }))
