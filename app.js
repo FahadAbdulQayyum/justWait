@@ -37,6 +37,7 @@ db.on('error', (err) => {
     console.log('err', err);
 })
 
+// So, here, in case of successfully open then console me in terminal the 'DB running!'
 db.on('open', async () => {
     console.log('DB running!');
 })
