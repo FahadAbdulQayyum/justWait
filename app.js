@@ -28,6 +28,7 @@ app.use(cors())
 // Consoling the mongoose.connection to check whether it works
 console.log('mongoose', mongoose.connection);
 
+// mongoose.connection stored in the db variable
 const db = mongoose.connection
 
 db.on('error', (err) => {
