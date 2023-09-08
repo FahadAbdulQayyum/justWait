@@ -25,6 +25,7 @@ app.use(express.json())
 app.use(cors())
 // app.use(cors({ origin: true, credentials: true }))
 
+// Consoling the mongoose.connection to check whether it works
 console.log('mongoose', mongoose.connection);
 
 const db = mongoose.connection
