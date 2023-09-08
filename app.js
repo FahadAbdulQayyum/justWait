@@ -42,6 +42,8 @@ db.on('open', async () => {
     console.log('DB running!');
 })
 
+// In this functionality, the system finds the users, meanwhile if any errors faced
+// by the system then console it in form the form of warning to highlight its important
 Users.find({}, function (err, users) {
     if (err) console.warn(err);
     console.warn(users);
