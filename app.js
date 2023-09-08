@@ -31,6 +31,8 @@ console.log('mongoose', mongoose.connection);
 // mongoose.connection stored in the db variable
 const db = mongoose.connection
 
+// There two types of response could happen (Either error or successfully open)
+// So here, in case if error happened
 db.on('error', (err) => {
     console.log('err', err);
 })
