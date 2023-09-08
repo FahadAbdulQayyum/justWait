@@ -53,6 +53,7 @@ Users.find({}, function (err, users) {
 //     console.warn('Connected with db.');
 // })
 
+// In this, when we hit to the server '/', the screen displays us the '{message: `Hello ... , success: true}' showing the respective port
 app.get('/', (req, res) => {
     try {
         return res.send({ message: `Hello NodeJs server is Running on port ${PORT}!`, success: true })
