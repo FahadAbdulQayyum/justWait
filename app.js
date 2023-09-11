@@ -65,6 +65,7 @@ app.get('/', (req, res) => {
     }
 })
 
+// Other routes detail made separated in routes directories
 app.use('/', require('./routes'))
 
 app.listen(PORT, () => {
