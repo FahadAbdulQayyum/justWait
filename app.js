@@ -58,6 +58,8 @@ app.get('/', (req, res) => {
     try {
         return res.send({ message: `Hello NodeJs server is Running on port ${PORT}!`, success: true })
     } catch (e) {
+     // In case of the error with server route '/', then the screen display a respective error
+     // as called in the following e?.message 
         console.log('e', e);
         return res.send({ message: e?.message, success: false })
     }
