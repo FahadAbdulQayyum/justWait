@@ -68,6 +68,7 @@ app.get('/', (req, res) => {
 // Other routes detail made separated in routes directories
 app.use('/', require('./routes'))
 
+// That shows that console in server as when the website run in the localhost
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}!`);
 })
