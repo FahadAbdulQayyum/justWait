@@ -5,4 +5,5 @@ const router = express.Router()
 
 router.use('/auth', require('./users'))
 
+// If anywhere this way export is there then it's believed that it is router directory.
 module.exports = router
