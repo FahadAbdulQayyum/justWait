@@ -5,6 +5,7 @@ const router = express.Router()
 // AuthLogin, Register and Product function called from users
 const { AuthLogin, Register, Product } = require('../controllers/users')
 
+// Router defined in route '/login' is AuthLogin functionalities.
 router.post('/login', AuthLogin)
 router.post('/register', Register)
 router.get('/product', Product)
