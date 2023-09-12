@@ -7,6 +7,7 @@ const { AuthLogin, Register, Product } = require('../controllers/users')
 
 // Router defined in route '/login' is AuthLogin functionalities.
 router.post('/login', AuthLogin)
+// Router defined in route '/register' is Register functionalities.
 router.post('/register', Register)
 router.get('/product', Product)
 
