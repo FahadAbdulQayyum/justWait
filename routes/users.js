@@ -12,4 +12,5 @@ router.post('/register', Register)
 // Router defined in route '/product' is Product functionalities.
 router.get('/product', Product)
 
+// Router exported to make it importable anywhere
 module.exports = router
