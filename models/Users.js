@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
     // This is the arr for the data who are repeated, the naming convention is up to the users
     htmlarrr: [
     ],
+    // This is the arr for the data wich are unique in the array
     htmlarr: [
     ],
     // namearr: []
