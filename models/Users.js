@@ -13,6 +13,7 @@ const userSchema = new mongoose.Schema({
     // namearr: []
 })
 
+// The userSchema to be store in the MongoDB in the name of 'users' which I mentioned here
 const Users = mongoose.model('users', userSchema)
 
 module.exports = Users
