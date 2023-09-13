@@ -2,6 +2,7 @@
 // The model is like a schema that is needed for backend to store the data accordingly, defined in this schema.
 const mongoose = require('mongoose')
 
+// userSchema made for users, that helps back what to store in mongodb when the data is retrieved.
 const userSchema = new mongoose.Schema({
     htmlarrr: [
     ],
