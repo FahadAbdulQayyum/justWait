@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 
 // userSchema made for users, that helps back what to store in mongodb when the data is retrieved.
 const userSchema = new mongoose.Schema({
+    // This is the arr for the data who are repeated, the naming convention is up to the users
     htmlarrr: [
     ],
     htmlarr: [
