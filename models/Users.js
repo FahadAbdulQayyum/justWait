@@ -16,4 +16,5 @@ const userSchema = new mongoose.Schema({
 // The userSchema to be store in the MongoDB in the name of 'users' which I mentioned here
 const Users = mongoose.model('users', userSchema)
 
+// Users exported
 module.exports = Users
