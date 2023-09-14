@@ -5,6 +5,7 @@ const { Users } = require('../models')
 const AuthLogin = (req, res) => {
     try {
         console.log('post req', req?.body);
+        // The req is structured to get body
         const { body } = req
 
         return res.send({ message: 'Successfully Loggedin!', success: true, user: body })
