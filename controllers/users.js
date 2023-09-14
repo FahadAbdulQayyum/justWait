@@ -12,7 +12,9 @@ const AuthLogin = (req, res) => {
         return res.send({ message: 'Successfully Loggedin!', success: true, user: body })
     } catch (e) {
         console.log('e', e);
-        return res.send({ message: e?.message, success: true })
+
+        // This returns a false succcess with the message error
+        return res.send({ message: e?.message, success: false })
     }
 }
 
