@@ -1,3 +1,4 @@
+// Users exported from the models directory, that is UserSchema
 const { Users } = require('../models')
 
 const AuthLogin = (req, res) => {
