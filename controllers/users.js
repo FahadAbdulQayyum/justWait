@@ -18,6 +18,7 @@ const AuthLogin = (req, res) => {
     }
 }
 
+// This is Register function
 const Register = (req, res) => {
     try {
         const { body } = req
