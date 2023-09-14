@@ -8,6 +8,7 @@ const AuthLogin = (req, res) => {
         // The req is structured to get body
         const { body } = req
 
+        // This sends back the success true message when the user is athenticated.
         return res.send({ message: 'Successfully Loggedin!', success: true, user: body })
     } catch (e) {
         console.log('e', e);
