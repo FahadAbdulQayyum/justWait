@@ -1,6 +1,7 @@
 // Users exported from the models directory, that is UserSchema
 const { Users } = require('../models')
 
+// This function's work is only authenticate the user
 const AuthLogin = (req, res) => {
     try {
         console.log('post req', req?.body);
