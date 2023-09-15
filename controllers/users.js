@@ -27,6 +27,7 @@ const Register = (req, res) => {
         // In case of body not found then this conditional function runs and finishes due to this function ends with return 
         if (!body) {
             console.log('body if', body);
+            // If body is empty then inform the user that message is empty and make it unsuccessful
             return res.send({ success: false, message: 'empty.' })
         }
         console.log('body out of if', body);
