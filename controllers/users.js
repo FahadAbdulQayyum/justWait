@@ -49,7 +49,7 @@ const Register = (req, res) => {
             // Catch the error and show them in the form of console.log
             .catch((e) => console.log('e',e))
 //         .catch((e) => return res.send({ message: e?.message, success: true }))
-
+        // After all show the body's data sent by user in the form of console.log
         console.log('body', body);
     } catch (e) {
 //         return res.send({ success: false, message: e?.message })
