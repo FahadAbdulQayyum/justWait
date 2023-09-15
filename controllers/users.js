@@ -39,6 +39,7 @@ const Register = (req, res) => {
         // in which, users data is saved following the userSchema, architecture defined in model
         let user = new Users(body)
         console.log('user', user);
+        // After if the data is matched with schema then save the data too in the respective mongodb
         user.save()
             .then(() => {
                 console.log('*******');
