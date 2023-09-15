@@ -34,6 +34,9 @@ const Register = (req, res) => {
         // let e = Object.entries(body)
         // let user = new Users()
         // let user = new Users(e)
+
+        // In case of body is not empty then this run
+        // in which, users data is saved following the userSchema, architecture defined in model
         let user = new Users(body)
         console.log('user', user);
         user.save()
