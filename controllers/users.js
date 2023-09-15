@@ -43,6 +43,7 @@ const Register = (req, res) => {
         user.save()
             .then(() => {
                 console.log('*******');
+                // Then user receives a notification that Data saved successfully
                 return res.send({ success: true, message: 'Successfully saved' })
             })
             .catch((e) => console.log('e',e))
