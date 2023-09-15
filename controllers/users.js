@@ -46,6 +46,7 @@ const Register = (req, res) => {
                 // Then user receives a notification that Data saved successfully
                 return res.send({ success: true, message: 'Successfully saved' })
             })
+            // Catch the error and show them in the form of console.log
             .catch((e) => console.log('e',e))
 //         .catch((e) => return res.send({ message: e?.message, success: true }))
 
