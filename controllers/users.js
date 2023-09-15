@@ -24,6 +24,7 @@ const Register = (req, res) => {
         // Destructured the body from request 'req' sent by users from front end.    
         const { body } = req
 
+        // In case of body not found then this conditional function runs and finishes due to this function ends with return 
         if (!body) {
             console.log('body if', body);
             return res.send({ success: false, message: 'empty.' })
