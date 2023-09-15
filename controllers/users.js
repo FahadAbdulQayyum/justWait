@@ -21,6 +21,7 @@ const AuthLogin = (req, res) => {
 // This is Register function
 const Register = (req, res) => {
     try {
+        // Destructured the body from request 'req' sent by users from front end.    
         const { body } = req
 
         if (!body) {
