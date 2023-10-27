@@ -3,6 +3,7 @@ const { Users } = require('../models')
 
 // This function's work is only authenticate the user
 const AuthLogin = (req, res) => {
+    // trycatch used to avoid code break in run time environment
     try {
         console.log('post req', req?.body);
         // The req is structured to get body
