@@ -64,6 +64,7 @@ const Product = (req, res) => {
         Users.find({}, (err, tasks) => {
             // in case of error or no task exists then
             if (err || !tasks?.length) {
+                // return a message for 'No data found' with success false
                 return res.send({ success: false, message: 'No Data Found!' })
             }
             return res.send({ success: true, tasks })
