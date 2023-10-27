@@ -56,6 +56,7 @@ const Register = (req, res) => {
     }
 }
 
+// Product's function starts here
 const Product = (req, res) => {
     try {
         Users.find({}, (err, tasks) => {
