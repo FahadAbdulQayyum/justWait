@@ -60,6 +60,7 @@ const Register = (req, res) => {
 const Product = (req, res) => {
 // try and catch used for avoiding the code break while running
     try {
+        // Bring all the users' tasks
         Users.find({}, (err, tasks) => {
             if (err || !tasks?.length) {
                 return res.send({ success: false, message: 'No Data Found!' })
