@@ -67,6 +67,7 @@ const Product = (req, res) => {
                 // return a message for 'No data found' with success false
                 return res.send({ success: false, message: 'No Data Found!' })
             }
+            // If task(s) do(es) exist then return the tasks with success true
             return res.send({ success: true, tasks })
         })
     }
