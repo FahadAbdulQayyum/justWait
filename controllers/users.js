@@ -58,6 +58,7 @@ const Register = (req, res) => {
 
 // Product's function starts here
 const Product = (req, res) => {
+// try and catch used for avoiding the code break while running
     try {
         Users.find({}, (err, tasks) => {
             if (err || !tasks?.length) {
