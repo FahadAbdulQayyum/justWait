@@ -85,6 +85,7 @@ const Product = (req, res) => {
 //     })
 // }
 
+// Exporting all the above functions for reusing in another components when needed
 module.exports = {
     AuthLogin,
     Register,
