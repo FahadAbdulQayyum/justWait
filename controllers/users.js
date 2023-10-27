@@ -74,7 +74,8 @@ const Product = (req, res) => {
     // If the users itself does not exist then in order to avoid code break catch the errors and display in return
     catch (e) {
         console.log('e', e);
-        return res.send({ message: e?.message, success: true })
+        // return the catche error's message with success false
+        return res.send({ message: e?.message, success: false })
     }
 }
 
